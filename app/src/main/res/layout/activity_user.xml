@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_colour">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/menu_ribbon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"></View>
+
+    <View
+        android:id="@+id/circle"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="145dp"
+        android:layout_marginEnd="156dp"
+        android:background="@drawable/circle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="InvalidId" />
+
+    <ImageButton
+        android:id="@+id/homeScreenButton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginBottom="15dp"
+        android:background="@mipmap/home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/userScreenButton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="15dp"
+        android:background="@mipmap/user"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/homeScreenButton" />
+
+    <ImageButton
+        android:id="@+id/historyScreenButton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="15dp"
+        android:background="@mipmap/history"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/searchScreenButton" />
+
+    <ImageButton
+        android:id="@+id/searchScreenButton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="15dp"
+        android:background="@mipmap/search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/buttonTextHome"
+        android:layout_width="35dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:text="Home"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeScreenButton"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/buttonTextHistory"
+        android:layout_width="35dp"
+        android:layout_height="12dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:text="History"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonTextSearch" />
+
+    <TextView
+        android:id="@+id/buttonTextSearch"
+        android:layout_width="35dp"
+        android:layout_height="12dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:text="Search"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/buttonTextUser"
+        android:layout_width="35dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:text="User"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonTextHome" />
+
+    <TextView
+        android:id="@+id/temperatureField"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:text="10°C"
+        android:textColor="#000000"
+        android:textSize="80sp"
+        app:layout_constraintBottom_toBottomOf="@+id/circle"
+        app:layout_constraintEnd_toEndOf="@+id/circle"
+        app:layout_constraintStart_toStartOf="@+id/circle"
+        app:layout_constraintTop_toTopOf="@+id/circle" />
+
+    <TextView
+        android:id="@+id/todayDate"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="177dp"
+        android:text="Today, June 7th, 2023"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="177dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="176dp"
+        android:gravity="center"
+        android:text="user"
+        android:textColor="#FFFFFF"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/todayDate" />
+
+    <TextView
+        android:id="@+id/country"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="177dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="176dp"
+        android:text="Estonia"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/city" />
+</androidx.constraintlayout.widget.ConstraintLayout>

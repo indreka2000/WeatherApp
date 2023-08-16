@@ -1,0 +1,9 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/background_item">
+        <shape android:shape="rectangle">
+            <solid android:color="#33000000" /> <!-- Set the translucent color here -->
+            <corners android:radius="10dp" />
+        </shape>
+    </item>
+    <item android:id="@+id/icon_item" android:drawable="@mipmap/user_foreground" /> <!-- Replace with your icon drawable -->
+</layer-list>
